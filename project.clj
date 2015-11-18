@@ -14,6 +14,6 @@
   :min-lein-version "2.0.0"
   :plugins [[environ/environ.lein "0.2.1"]]
   :hooks [environ.leiningen.hooks]
-  :main portfolio-website.web
+  :main portfolio-website.core
   :uberjar-name "portfolio-website-standalone.jar"
   :profiles {:production {:env {:production true}}})
