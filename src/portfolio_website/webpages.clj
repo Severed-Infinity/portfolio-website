@@ -6,13 +6,13 @@
 (def nav
   (hic/html
     [:nav
-     [:a {:href "/"} "Home"]
+     [:a {:href "/"} "David Swift"]
      " | "
-     [:a {:href "/proj"} "Projects"]
+     [:a {:href "#"} "Projects"]
      " | "
-     [:a {:href "/edu"} "Education"]
+     [:a {:href "#"} "Education"]
      " | "
-     [:a {:href "/reviews"} "Reviews/Comments"]
+     [:a {:href "#"} "Reviews/Comments"]
      " | "
      [:button {:type "button"} "CV"]]))
 
