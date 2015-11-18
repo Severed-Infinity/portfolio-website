@@ -1,1 +1,1 @@
-web: java $JVM_OPTS -cp target/portfolio-website-standalone.jar clojure.main -m portfolio-website.web
+web: lein with-profile production trampoline run -m portfolio-website.web
