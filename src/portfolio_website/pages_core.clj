@@ -34,7 +34,7 @@
         [:a.social.entypo-github {:href "https://github.com/Severed-Infinity" :target "_blank"}
          [:img.visible-xs.visbible.sm {:alt "github logo" :src (to-uri "svg/github13.svg")}] #_"&#62208;"]]
        [:ul.nav.navbar-nav.navbar-right
-        [:li [:a {:href "#"} "Projects"]]
+        [:li [:a {:href "/projects"} "Projects"]]
         [:li [:a {:href "#"} "Education"]]
         #_[:li [:a {:href "#"} "Reviews/Comments"]]
         [:li [:a {:href   (to-uri "davidswift_cv.pdf")

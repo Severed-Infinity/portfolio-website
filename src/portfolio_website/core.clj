@@ -10,7 +10,8 @@
             [ring.middleware.basic-authentication :as basic]
             [cemerick.drawbridge :as drawbridge]
             [environ.core :refer [env]]
-            [portfolio-website.about-page]))
+            [portfolio-website.about-page :as about]
+            [portfolio-website.projects-page :as projects]))
 
 (defn- authenticated? [user pass]
   ;; TODO: heroku config:add REPL_USER=[...] REPL_PASSWORD=[...]
@@ -24,8 +25,8 @@
 (defroutes app
   (ANY "/repl" {:as req}
        (drawbridge req))
-  (GET "/" [] about-page)
-  (GET "/projects" [] projects)
+  (GET "/" [] about/about-page)
+  (GET "/projects" [] projects/projects)
   (route/resources "/"))
 
 (defn wrap-error-page [handler]
