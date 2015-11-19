@@ -4,7 +4,7 @@
              [util :refer [to-uri]]
              [page :as page]]))
 
-(defn comment
+(defn comment-wrapper
   "Wrap the supplied HTML in a comment"
   [html]
   (str "<!--" html "-->"))
@@ -26,10 +26,10 @@
         [:span.icon-bar]]
        [:a.navbar-brand {:href "/"} "David Swift"]]
       [:div.navbar-collapse.collapse
-       [:ul.nav.navbar-nav
-        [:li [:a {:href "https://twitter.com/SeveredInfinity"} "Twitter"]]
-        [:li [:a {:href "https://ie.linkedin.com/in/severedinfinity"} "LinkedIn"]]
-        [:li [:a {:href "https://github.com/Severed-Infinity"} "GitHub"]]]
+       [:div.nav.navbar-nav
+        [:a.social {:href "https://twitter.com/SeveredInfinity" :target "_blank"} "&#62217;"]
+        [:a.social {:href "https://ie.linkedin.com/in/severedinfinity" :target "_blank"} "&#62232;"]
+        [:a.social {:href "https://github.com/Severed-Infinity" :target "_blank"} "&#62208;"]]
        [:ul.nav.navbar-nav.navbar-right
         [:li [:a {:href "#"} "Projects"]]
         [:li [:a {:href "#"} "Education"]]
@@ -52,7 +52,7 @@
          "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
        #_(page/include-css "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
        [:title title]
-       (comment
+       (comment-wrapper
          (hic/html
            [:script {:src "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"}]
            [:script {:src "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"}]))]
