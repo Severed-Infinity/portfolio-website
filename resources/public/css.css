@@ -73,7 +73,7 @@ a{
     background-color: transparent !important;
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     .navbar-collapse {
         background-color: #000C1A !important;
     }
