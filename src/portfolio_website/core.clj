@@ -24,7 +24,8 @@
 (defroutes app
   (ANY "/repl" {:as req}
        (drawbridge req))
-  (GET "/" [] webpages/about-page))
+  (GET "/" [] webpages/about-page)
+  (route/resources "/"))
 
 (defn wrap-error-page [handler]
   (fn [req]
