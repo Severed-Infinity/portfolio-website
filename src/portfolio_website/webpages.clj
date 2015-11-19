@@ -8,26 +8,36 @@
   (hic/html
     [:nav
      [:a {:href "/"} "David Swift"]
-     " | "
+     [:a {:href "https://twitter.com/SeveredInfinity"} "Twitter"]
+     [:a {:href "https://ie.linkedin.com/in/severedinfinity"} "LinkedIn"]
+     [:a {:href "https://github.com/Severed-Infinity"} "GitHub"]
      [:a {:href "#"} "Projects"]
-     " | "
      [:a {:href "#"} "Education"]
-     " | "
      [:a {:href "#"} "Reviews/Comments"]
-     " | "
      [:a {:href   (to-uri "davidswift_cv.pdf")
           :target "_blank"
-          :rel    "nofollow"} "downlaod"]
-     [:button {:type "button"} "CV"]]))
+          :rel    "nofollow"} "downlaod"]]))
 
 (defn page [title & more]
   (page/html5
+    {:lang "en"}
     (hic/html
-      [:head (page/include-css "css.css")
+      [:head
+       [:meta {:charset "utf-8"}]
+       [:meta {:http-equiv "X-UA-Compatible" :content "IE=edge"}]
+       [:meta {:name    "viewport"
+               :content "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"}]
+       (page/include-css
+         "css.css"
+         "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
+       #_(page/include-css "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
        [:title title]]
       [:body
        nav
-       more])))
+       more
+       (page/include-js
+         "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+         "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")])))
 
 (def about-page
   (page
