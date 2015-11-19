@@ -11,7 +11,7 @@
 
 (def nav
   (hic/html
-    [:nav.navbar.navbar-default {:role "navigation"}
+    [:nav.navbar.navbar-default {:role "navigation" :style "z-index: 1;"}
      [:div.container
       [:div.navbar-header
        [:button.navbar-toggle.collapsed

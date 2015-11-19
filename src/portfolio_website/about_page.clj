@@ -6,7 +6,7 @@
 
 (def tag-line
   (hic/html
-    [:aside.col-xs-12.col.md-6
+    [:aside.col-xs-12.col.md-5
      [:h1 "The up-and-comer"]
 
      ;;TODO only temporary list
