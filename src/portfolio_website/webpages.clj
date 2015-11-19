@@ -20,14 +20,18 @@
           :rel    "nofollow"} "downlaod"]
      [:button {:type "button"} "CV"]]))
 
-(defn page [& more]
-  (hic/html
-    [:head (page/include-css "css.css")]
-    nav
-    more))
+(defn page [title & more]
+  (page/html5
+    (hic/html
+      [:head (page/include-css "css.css")
+       [:title title]]
+      [:body
+       nav
+       more])))
 
 (def about-page
   (page
+    "About - David Swift"
     #_(hic/html
         ;tag-line
         [:section
