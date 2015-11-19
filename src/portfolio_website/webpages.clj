@@ -4,6 +4,11 @@
              [util :refer [to-uri]]
              [page :as page]]))
 
+(defn comment
+  "Wrap the supplied HTML in a comment"
+  [html]
+  (str "<!--" html "-->"))
+
 (def nav
   (hic/html
     [:nav.navbar.navbar-default {:role "navigation"}
@@ -43,7 +48,11 @@
          "css.css"
          "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
        #_(page/include-css "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
-       [:title title]]
+       [:title title]
+       (comment
+         (hic/html
+           [:script {:src "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"}]
+           [:script {:src "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"}]))]
       [:body
        nav
        more
