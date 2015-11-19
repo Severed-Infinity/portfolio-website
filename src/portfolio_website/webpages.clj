@@ -24,7 +24,7 @@
         [:span.icon-bar]
         [:span.icon-bar]
         [:span.icon-bar]]
-       [:a.navbar-brand {:href "/"} "David Swift"]]
+       [:a.navbar-brand.brand-name-scripted {:href "/"} "David Swift"]]
       [:div.navbar-collapse.collapse
        [:div.nav.navbar-nav
         [:a.social.entypo-twitter {:href "https://twitter.com/SeveredInfinity" :target "_blank"}
@@ -52,7 +52,8 @@
                :content "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"}]
        (page/include-css
          "css.css"
-         "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
+         "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+         "http://fonts.googleapis.com/css?family=Arizonia")
        #_(page/include-css "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
        [:title title]
        (comment-wrapper
@@ -66,7 +67,7 @@
         more]
        [:footer.footer.navbar-fixed-bottom
         [:hr]
-        [:p.text-muted
+        [:p.text-muted.container
          "Icons made by "
          [:a {:href "http://www.flaticon.com/authors/simpleicon" :title "SimpleIcon"} "SimpleIcon"] " from "
          [:a {:href "http://www.flaticon.com" :title "Flaticon"} "www.flaticon.com"] "is licensed by "

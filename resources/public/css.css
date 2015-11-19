@@ -2,7 +2,7 @@
 
 
 body {
-    background: rgb(221, 221, 221) !important;
+    background: rgb(249, 249, 249) !important;
 }
 
 .wrapper {
@@ -34,6 +34,7 @@ body {
 .navbar-default {
     background-color: rgb(221, 221, 221) !important;
     border-color: rgb(221, 221, 221) !important;
+    height: 75px;
 }
 
 .breaker {
@@ -44,4 +45,10 @@ body {
 
 a:hover {
 color: rgb(35, 82, 124) !important;
+}
+
+.brand-name-scripted{
+    font-family: 'Arizonia', cursive !important;
+    font-size: 34px !important;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
