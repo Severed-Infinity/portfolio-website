@@ -11,7 +11,7 @@
 
 (def nav
   (hic/html
-    [:nav.navbar.navbar-default.navbar-fixed-top {:role "navigation"}
+    [:nav.navbar.navbar-default {:role "navigation"}
      [:div.container
       [:div.navbar-header
        [:button.navbar-toggle.collapsed
@@ -63,10 +63,10 @@
       [:body
        [:div.wrapper
         nav
-        [:div.breaker "&#8291;"]
+        ;[:div.breaker "&#8291;"]
         [:main.container
          more]
-        [:footer.footer.navbar-fixed-bottom
+        [:footer.footer
          [:hr]
          [:p.text-muted.container
           "Icons made by "

@@ -77,4 +77,8 @@ a{
     .navbar-collapse {
         background-color: #000C1A !important;
     }
+
+    .wrapper {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
 }
