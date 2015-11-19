@@ -36,7 +36,12 @@ body {
     border-color: rgb(221, 221, 221) !important;
 }
 
-.main {
+.breaker {
     position: relative;
+    height: 50px;
     top: 50px;
+}
+
+a:hover {
+color: rgb(35, 82, 124) !important;
 }

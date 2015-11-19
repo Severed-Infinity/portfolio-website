@@ -27,9 +27,12 @@
        [:a.navbar-brand {:href "/"} "David Swift"]]
       [:div.navbar-collapse.collapse
        [:div.nav.navbar-nav
-        [:a.social.entypo-twitter {:href "https://twitter.com/SeveredInfinity" :target "_blank"} #_"&#62217;"]
-        [:a.social.entypo-linkedin {:href "https://ie.linkedin.com/in/severedinfinity" :target "_blank"} #_"&#62232;"]
-        [:a.social.entypo-github {:href "https://github.com/Severed-Infinity" :target "_blank"} #_"&#62208;"]]
+        [:a.social.entypo-twitter {:href "https://twitter.com/SeveredInfinity" :target "_blank"}
+         [:img.visible-xs.visbible.sm {:alt "twitter logo" :src (to-uri "svg/twitter21.svg")}] #_"&#62217;"]
+        [:a.social.entypo-linkedin {:href "https://ie.linkedin.com/in/severedinfinity" :target "_blank"}
+         [:img.visible-xs.visbible.sm {:alt "linkedin logo" :src (to-uri "svg/linkedin11.svg")}] #_"&#62232;"]
+        [:a.social.entypo-github {:href "https://github.com/Severed-Infinity" :target "_blank"}
+         [:img.visible-xs.visbible.sm {:alt "github logo" :src (to-uri "svg/github13.svg")}] #_"&#62208;"]]
        [:ul.nav.navbar-nav.navbar-right
         [:li [:a {:href "#"} "Projects"]]
         [:li [:a {:href "#"} "Education"]]
@@ -58,8 +61,15 @@
            [:script {:src "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"}]))]
       [:body
        nav
-       [:main.main.container
+       [:div.breaker]
+       [:main.container
         more]
+       [:div
+        [:hr]
+        "Icons made by "
+        [:a {:href "http://www.flaticon.com/authors/simpleicon" :title "SimpleIcon"} "SimpleIcon"] " from "
+        [:a {:href "http://www.flaticon.com" :title "Flaticon"} "www.flaticon.com"] "is licensed by "
+        [:a {:href "http://creativecommons.org/licenses/by/3.0/" :title "Creative Commons BY 3.0"} " CC BY 3.0"]]
        (page/include-js
          "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
          "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")])))
@@ -71,8 +81,9 @@
       ;tag-line
       [:section
        [:h1 "About Me"]
-       [:p "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ornare sagittis magna et bibendum. Nullam luctus vitae massa at elementum. Suspendisse ipsum nisi, tempus sit amet arcu et, semper scelerisque neque. Morbi posuere luctus eros eu convallis. Vivamus auctor massa mi, sit amet mollis felis maximus ac. In maximus ex leo, at dictum augue lobortis sed. Etiam sit amet velit lacus. Maecenas leo nisl, vulputate quis bibendum in, iaculis a velit. Donec feugiat cursus libero hendrerit dapibus. Donec imperdiet lectus sem, vel dapibus odio ultricies vel. In condimentum urna enim, vitae viverra metus facilisis vel. Vestibulum justo ante, accumsan ut nulla vehicula, sodales elementum nulla. Nulla in velit non lorem tempus imperdiet id in sem. Integer sit amet dui odio. Praesent hendrerit blandit vulputate."]
-       [:p "Nunc consectetur efficitur imperdiet. Integer felis lacus, facilisis sed varius facilisis, lobortis non enim. Donec accumsan est id dictum volutpat. Sed vel magna ultricies, maximus nisi vitae, consectetur enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla vel mattis enim, non mollis tellus. Suspendisse vitae ultrices nulla, et lobortis nunc. Etiam sit amet lacus ac purus gravida pellentesque vitae id risus. Sed ornare est ut lectus dictum blandit. Pellentesque sed nisi enim. Nam in dapibus dui. Aenean ullamcorper varius neque, eu hendrerit nulla faucibus eu. Quisque ac tellus accumsan, tempus ligula ac, sodales quam. Phasellus eget erat sed nunc gravida mollis a eget mi. Suspendisse maximus lacinia fermentum. Morbi sit amet consectetur nibh, id sodales magna."
-        ]]
+       [:p " Welcome to the world of David Swift, don’t be afraid to stay awhile, as long as you are here I should introduce myself. Well, I’m a computing student at"
+        [:abbr {:title "Institute of Technology Tallaght"} "ITT"]
+        ", a fourth to be exact, I’m half way through my final year as of writing this and I’ve learnt quite a bit since entering through the doors of the college."]
+       ]
       [:img {:alt "profile image of me"
              :src "#"}])))
