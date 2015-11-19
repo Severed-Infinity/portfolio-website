@@ -32,6 +32,11 @@ body {
 }
 
 .navbar-default {
-    background-color: transparent !important;
-    border-color: transparent !important;
+    background-color: rgb(221, 221, 221) !important;
+    border-color: rgb(221, 221, 221) !important;
+}
+
+.main {
+    position: relative;
+    top: 50px;
 }
