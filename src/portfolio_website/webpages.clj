@@ -27,9 +27,9 @@
        [:a.navbar-brand {:href "/"} "David Swift"]]
       [:div.navbar-collapse.collapse
        [:div.nav.navbar-nav
-        [:a.social {:href "https://twitter.com/SeveredInfinity" :target "_blank"} "&#62217;"]
-        [:a.social {:href "https://ie.linkedin.com/in/severedinfinity" :target "_blank"} "&#62232;"]
-        [:a.social {:href "https://github.com/Severed-Infinity" :target "_blank"} "&#62208;"]]
+        [:a.social.entypo-twitter {:href "https://twitter.com/SeveredInfinity" :target "_blank"} "&#62217;"]
+        [:a.social.entypo-linkedin {:href "https://ie.linkedin.com/in/severedinfinity" :target "_blank"} "&#62232;"]
+        [:a.social.entypo-github {:href "https://github.com/Severed-Infinity" :target "_blank"} "&#62208;"]]
        [:ul.nav.navbar-nav.navbar-right
         [:li [:a {:href "#"} "Projects"]]
         [:li [:a {:href "#"} "Education"]]
