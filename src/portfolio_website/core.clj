@@ -1,4 +1,4 @@
-(ns portfolio-website.web
+(ns portfolio-website.core
   (:require [compojure.core :refer [defroutes GET PUT POST DELETE ANY]]
             [compojure.handler :refer [site]]
             [compojure.route :as route]
@@ -9,7 +9,8 @@
             [ring.adapter.jetty :as jetty]
             [ring.middleware.basic-authentication :as basic]
             [cemerick.drawbridge :as drawbridge]
-            [environ.core :refer [env]]))
+            [environ.core :refer [env]]
+            [portfolio-website.webpages :as webpages]))
 
 (defn- authenticated? [user pass]
   ;; TODO: heroku config:add REPL_USER=[...] REPL_PASSWORD=[...]
@@ -23,12 +24,8 @@
 (defroutes app
   (ANY "/repl" {:as req}
        (drawbridge req))
-  (GET "/" []
-    {:status  200
-     :headers {"Content-Type" "text/plain"}
-     :body    (pr-str ["Hello" :from 'Heroku])
-     :else (ANY "*" []
-       (route/not-found (slurp (io/resource "404.html"))))}))
+  (GET "/" [] webpages/about-page)
+  (route/resources "/"))
 
 (defn wrap-error-page [handler]
   (fn [req]
