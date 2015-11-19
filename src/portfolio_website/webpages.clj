@@ -6,17 +6,29 @@
 
 (def nav
   (hic/html
-    [:nav
-     [:a {:href "/"} "David Swift"]
-     [:a {:href "https://twitter.com/SeveredInfinity"} "Twitter"]
-     [:a {:href "https://ie.linkedin.com/in/severedinfinity"} "LinkedIn"]
-     [:a {:href "https://github.com/Severed-Infinity"} "GitHub"]
-     [:a {:href "#"} "Projects"]
-     [:a {:href "#"} "Education"]
-     [:a {:href "#"} "Reviews/Comments"]
-     [:a {:href   (to-uri "davidswift_cv.pdf")
-          :target "_blank"
-          :rel    "nofollow"} "downlaod"]]))
+    [:nav.navbar.navbar-default {:role "navigation"}
+     [:div.navbar-header
+      [:button.navbar-toggle.collapsed
+       {:type          "button"
+        :data-toggle   "collapse"
+        :data-target   ".navbar-collapse"
+        :aria-expanded "false"
+        :aria-control  "navbar"}
+       [:span.sr-only "Toggle navigation"]
+       [:span.icon-bar]
+       [:span.icon-bar]
+       [:span.icon-bar]]
+      [:a.navbar-brand {:href "/"} "David Swift"]]
+     [:div.navbar-collapse.collapse
+      [:a {:href "https://twitter.com/SeveredInfinity"} "Twitter"]
+      [:a {:href "https://ie.linkedin.com/in/severedinfinity"} "LinkedIn"]
+      [:a {:href "https://github.com/Severed-Infinity"} "GitHub"]
+      [:a {:href "#"} "Projects"]
+      [:a {:href "#"} "Education"]
+      [:a {:href "#"} "Reviews/Comments"]
+      [:a {:href   (to-uri "davidswift_cv.pdf")
+           :target "_blank"
+           :rel    "nofollow"} "downlaod"]]]))
 
 (defn page [title & more]
   (page/html5
