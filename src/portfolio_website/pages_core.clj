@@ -61,17 +61,18 @@
            [:script {:src "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"}]
            [:script {:src "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"}]))]
       [:body
-       nav
-       [:div.breaker "&#8291;"]
-       [:main.container
-        more]
-       [:footer.footer.navbar-fixed-bottom
-        [:hr]
-        [:p.text-muted.container
-         "Icons made by "
-         [:a {:href "http://www.flaticon.com/authors/simpleicon" :title "SimpleIcon"} "SimpleIcon"] " from "
-         [:a {:href "http://www.flaticon.com" :title "Flaticon"} "www.flaticon.com"] "is licensed by "
-         [:a {:href "http://creativecommons.org/licenses/by/3.0/" :title "Creative Commons BY 3.0"} " CC BY 3.0"]]]
+       [:div.wrapper
+        nav
+        [:div.breaker "&#8291;"]
+        [:main.container
+         more]
+        [:footer.footer.navbar-fixed-bottom
+         [:hr]
+         [:p.text-muted.container
+          "Icons made by "
+          [:a {:href "http://www.flaticon.com/authors/simpleicon" :title "SimpleIcon"} "SimpleIcon"] " from "
+          [:a {:href "http://www.flaticon.com" :title "Flaticon"} "www.flaticon.com"] "is licensed by "
+          [:a {:href "http://creativecommons.org/licenses/by/3.0/" :title "Creative Commons BY 3.0"} " CC BY 3.0"]]]]
        (page/include-js
          "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
          "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")])))
