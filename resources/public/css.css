@@ -38,8 +38,8 @@ body {
 
 .breaker {
     position: relative;
-    height: 50px;
     top: 50px;
+    margin: 30px;
 }
 
 a:hover {
