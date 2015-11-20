@@ -6,7 +6,7 @@
 
 (def tag-line
   (hic/html
-    [:aside
+    [:aside.col-xs-12.col.md-5
      [:h1 "The up-and-comer"]
 
      ;;TODO only temporary list
@@ -38,7 +38,7 @@
       tag-line
       ;TODO better image of self
       [:section.col-xs-12.col-md-5
-       [:img {:alt "profile image of me"
+       [:img.img-responsive {:alt "profile image of me"
               :src (to-uri "david_swift.jpg")}]]
       [:section.col-xs-12.col-md-5.col-md-offset-2
        [:h1 "About Me"]
