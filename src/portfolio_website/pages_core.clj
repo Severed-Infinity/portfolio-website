@@ -2,7 +2,8 @@
   (:require [hiccup
              [core :as hic]
              [util :refer [to-uri]]
-             [page :as page]]))
+             [page :as page]]
+            [portfolio-website.contact-modal :as contact]))
 
 (defn comment-wrapper
   "Wrap the supplied HTML in a comment"
@@ -32,7 +33,9 @@
         [:a.social.entypo-linkedin {:href "https://ie.linkedin.com/in/severedinfinity" :target "_blank"}
          [:img.visible-xs.visbible-sm.img-responsive {:alt "linkedin logo" :src (to-uri "svg/linkedin11.svg")}] #_"&#62232;"]
         [:a.social.entypo-github {:href "https://github.com/Severed-Infinity" :target "_blank"}
-         [:img.visible-xs.visbible-sm.img-responsive {:alt "github logo" :src (to-uri "svg/github13.svg")}] #_"&#62208;"]]
+         [:img.visible-xs.visbible-sm.img-responsive {:alt "github logo" :src (to-uri "svg/github13.svg")}] #_"&#62208;"]
+        [:a.social.entypo-mail {:href "#contact-modal" :target "#contact-modal" :data-toggle "modal"}
+         [:img.visible-xs.visbible-sm.img-responsive {:alt "email" :src (to-uri "svg/email29.svg")}] #_"&#62208;"]]
        [:ul.nav.navbar-nav.navbar-right
         [:li [:a {:href "/projects"} "Projects"]]
         [:li [:a {:href "#"} "Education"]]
@@ -63,6 +66,7 @@
       [:body
        [:div.wrapper
         nav
+        contact/contact-modal
         ;[:div.breaker "&#8291;"]
         [:main.container
          more]
@@ -71,7 +75,7 @@
          [:p.text-muted.container
           "Icons made by "
           [:a {:href "http://www.flaticon.com/authors/simpleicon" :title "SimpleIcon"} "SimpleIcon"] " from "
-          [:a {:href "http://www.flaticon.com" :title "Flaticon"} "www.flaticon.com"] "is licensed by "
+          [:a {:href "http://www.flaticon.com" :title "Flaticon"} "www.flaticon.com"] " is licensed by "
           [:a {:href "http://creativecommons.org/licenses/by/3.0/" :title "Creative Commons BY 3.0"} " CC BY 3.0"]]]]
        (page/include-js
          "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
