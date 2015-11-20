@@ -28,11 +28,11 @@
       [:div.navbar-collapse.collapse
        [:div.nav.navbar-nav
         [:a.social.entypo-twitter {:href "https://twitter.com/SeveredInfinity" :target "_blank"}
-         [:img.visible-xs.visbible.sm {:alt "twitter logo" :src (to-uri "svg/twitter21.svg")}] #_"&#62217;"]
+         [:img.visible-xs.visbible-sm.img-responsive {:alt "twitter logo" :src (to-uri "svg/twitter21.svg")}] #_"&#62217;"]
         [:a.social.entypo-linkedin {:href "https://ie.linkedin.com/in/severedinfinity" :target "_blank"}
-         [:img.visible-xs.visbible.sm {:alt "linkedin logo" :src (to-uri "svg/linkedin11.svg")}] #_"&#62232;"]
+         [:img.visible-xs.visbible-sm.img-responsive {:alt "linkedin logo" :src (to-uri "svg/linkedin11.svg")}] #_"&#62232;"]
         [:a.social.entypo-github {:href "https://github.com/Severed-Infinity" :target "_blank"}
-         [:img.visible-xs.visbible.sm {:alt "github logo" :src (to-uri "svg/github13.svg")}] #_"&#62208;"]]
+         [:img.visible-xs.visbible-sm.img-responsive {:alt "github logo" :src (to-uri "svg/github13.svg")}] #_"&#62208;"]]
        [:ul.nav.navbar-nav.navbar-right
         [:li [:a {:href "/projects"} "Projects"]]
         [:li [:a {:href "#"} "Education"]]
