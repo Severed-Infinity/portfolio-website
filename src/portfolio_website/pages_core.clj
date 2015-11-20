@@ -38,7 +38,7 @@
          [:img.visible-xs.visbible-sm.img-responsive {:alt "email" :src (to-uri "svg/email29.svg")}] #_"&#62208;"]]
        [:ul.nav.navbar-nav.navbar-right
         [:li [:a {:href "/projects"} "Projects"]]
-        [:li [:a {:href "#"} "Education"]]
+        [:li [:a {:href "/education"} "Education"]]
         #_[:li [:a {:href "#"} "Reviews/Comments"]]
         [:li [:a {:href   (to-uri "davidswift_cv.pdf")
                   :target "_blank"
