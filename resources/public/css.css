@@ -63,6 +63,14 @@ a{
     color: #f7f7f7 !important;
 }
 
+#contact-modal {
+    color: rgb(55, 55, 55) !important;
+}
+
+textarea#message {
+    resize: none;
+}
+
 .brand-name-scripted {
     font-family: 'Arizonia', cursive !important;
     font-size: 34px !important;

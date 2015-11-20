@@ -39,7 +39,7 @@
       ;TODO better image of self
       [:section.col-xs-12.col-md-5
        [:img.img-responsive {:alt "profile image of me"
-              :src (to-uri "david_swift.jpg")}]]
+                             :src (to-uri "david_swift.jpg")}]]
       [:section.col-xs-12.col-md-5.col-md-offset-2
        [:h1 "About Me"]
        [:p " Welcome to the world of David Swift, don’t be afraid to stay awhile, as long as you are here I should introduce myself. Well, I’m a computing student at "
