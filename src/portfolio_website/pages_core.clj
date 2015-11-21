@@ -29,20 +29,21 @@
       [:div.navbar-collapse.collapse
        [:div.nav.navbar-nav
         [:a.social.entypo-twitter {:href "https://twitter.com/SeveredInfinity" :target "_blank"}
-         [:img.visible-xs.visbible-sm.img-responsive {:alt "twitter logo" :src (to-uri "svg/twitter21.svg")}] #_"&#62217;"]
+         [:img.visible-xs.visbible-sm.img-responsive.social-icon-mb {:alt "twitter logo" :src (to-uri "svg/twitter21.svg")}] #_"&#62217;"]
         [:a.social.entypo-linkedin {:href "https://ie.linkedin.com/in/severedinfinity" :target "_blank"}
-         [:img.visible-xs.visbible-sm.img-responsive {:alt "linkedin logo" :src (to-uri "svg/linkedin11.svg")}] #_"&#62232;"]
+         [:img.visible-xs.visbible-sm.img-responsive.social-icon-mb {:alt "linkedin logo" :src (to-uri "svg/linkedin11.svg")}] #_"&#62232;"]
         [:a.social.entypo-github {:href "https://github.com/Severed-Infinity" :target "_blank"}
-         [:img.visible-xs.visbible-sm.img-responsive {:alt "github logo" :src (to-uri "svg/github13.svg")}] #_"&#62208;"]
+         [:img.visible-xs.visbible-sm.img-responsive.social-icon-mb {:alt "github logo" :src (to-uri "svg/github13.svg")}] #_"&#62208;"]
         [:a.social.entypo-mail {:href "#contact-modal" :target "#contact-modal" :data-toggle "modal"}
-         [:img.visible-xs.visbible-sm.img-responsive {:alt "email" :src (to-uri "svg/email29.svg")}] #_"&#62208;"]]
+         [:img.visible-xs.visbible-sm.img-responsive.social-icon-mb {:alt "email" :src (to-uri "svg/email29.svg")}] #_"&#62208;"]]
        [:ul.nav.navbar-nav.navbar-right
         [:li [:a {:href "/projects"} "Projects"]]
-        [:li [:a {:href "#"} "Education"]]
+        [:li [:a {:href "/education"} "Education"]]
         #_[:li [:a {:href "#"} "Reviews/Comments"]]
         [:li [:a {:href   (to-uri "davidswift_cv.pdf")
                   :target "_blank"
-                  :rel    "nofollow"} "CV"]]]]]]))
+                  :rel    "nofollow"} "CV" [:span.entypo-download
+                                            [:img.visible-xs.visbible-sm.img-responsive.social-icon-mb.social {:alt "email" :src (to-uri "svg/cloud134.svg")}]]]]]]]]))
 
 (defn page [title & more]
   (page/html5
