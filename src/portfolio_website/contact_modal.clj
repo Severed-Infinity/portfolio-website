@@ -26,4 +26,4 @@
           [:label {:for "mge"} "Message"]
           [:textarea#mge.form-control {:rows 10 :maxlength 1024 :required true :placeholder "Reasons for emailing :)" :name "mge"}]]
          [:div.form-group
-          [:button.btn.btn-success.col-xs-offset-10.disabled {:type "submit" :data-toggle "tooltip" :title "disabled due to processing error"} "Submit"]]]]]]]))
+          [:button.btn.btn-success.col-xs-offset-9.disabled {:type "submit" :data-toggle "tooltip" :title "disabled due to processing error"} "Submit"]]]]]]]))
