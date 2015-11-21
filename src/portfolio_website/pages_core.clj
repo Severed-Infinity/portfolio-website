@@ -43,7 +43,8 @@
         [:li [:a {:href   (to-uri "davidswift_cv.pdf")
                   :target "_blank"
                   :rel    "nofollow"} "CV" [:span.entypo-download
-                                            [:img.visible-xs.visbible-sm.img-responsive.social-icon-mb.social {:alt "email" :src (to-uri "svg/cloud134.svg")}]]]]]]]]))
+                                            [:img.visible-xs.visbible-sm.img-responsive.social-icon-mb.social
+                                             {:alt "email" :src (to-uri "svg/cloud134.svg")}]]]]]]]]))
 
 (defn page [title & more]
   (page/html5
