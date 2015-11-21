@@ -1,7 +1,6 @@
 (ns portfolio-website.education-page
   (:require [hiccup.core :as hic]
-            [portfolio-website.pages-core :as pages])
-  (:import [java.security Security]))
+            [portfolio-website.pages-core :as pages]))
 
 (def education-page
   (pages/page

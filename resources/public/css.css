@@ -88,6 +88,10 @@ textarea#message {
 .panel, .panel>.panel-heading>h4>a {
     color: rgb(55, 55, 55) !important;
 }
+
+.social-icon-mb {
+   max-height: 18px;
+}
 @media only screen and (max-width: 768px) {
     .navbar-collapse {
         background-color: #000C1A !important;
