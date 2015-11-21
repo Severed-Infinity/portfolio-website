@@ -12,6 +12,7 @@
             [environ.core :refer [env]]
             [portfolio-website.about-page :as about]
             [portfolio-website.projects-page :as projects]
+            [portfolio-website.education-page :as education]
             [postal.core :as postal]))
 
 (defn- authenticated? [user pass]
@@ -41,7 +42,7 @@
     (drawbridge req))
   (GET "/" [] about/about-page)
   (GET "/projects" [] projects/projects)
-  (GET "/education" [])
+  (GET "/education" [] education/education-page)
   (POST "/" [from phone subject message] (send-message from phone subject message))
   (route/resources "/"))
 
