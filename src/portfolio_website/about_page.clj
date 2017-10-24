@@ -39,7 +39,7 @@
       ;TODO better image of self
       [:section.col-xs-12.col-md-5.col-md-push-7
        [:img.img-responsive.thumbnail {:alt "profile image of me"
-                             :src (to-uri "david_swift.jpg")}]]
+                                       :src (to-uri "david_swift.jpg")}]]
       [:section.col-xs-12.col-md-6.col-md-pull-5
        [:h1 "About Me"]
        [:p " Welcome to the world of David Swift, don’t be afraid to stay awhile, as long as you are here I should introduce myself. Well, I’m a computing student at "
@@ -51,6 +51,5 @@
        easy task at that but in doing so have come along way and will continue to strive to progress further down these roads."]
        [:p "I’m known from within my class and some social circles as being very helpful and knowledgable when it comes to figuring out coding problems among other
        things, giving a helping hand where I can. Always took the leadership role and guided my teams through various projects since my first year and it was never
-       an easy task, many walls stood in the way but ultimately found away over."]
-       ]
-      )))
+       an easy task, many walls stood in the way but ultimately found away over."]])))
+

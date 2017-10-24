@@ -58,7 +58,7 @@
        (page/include-css
          "css.css"
          "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-         "http://fonts.googleapis.com/css?family=Arizonia")
+         "https://fonts.googleapis.com/css?family=Arizonia")
        #_(page/include-css "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
        [:title title]
        (comment-wrapper
