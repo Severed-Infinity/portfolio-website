@@ -8,8 +8,8 @@
      [:li.active [:a {:data-toggle "tab" :href "#fourth"} "Fourth Year"]]
      [:li [:a {:data-toggle "tab" :href "#third"} "Third Year"]]
      [:li [:a {:data-toggle "tab" :href "#second"} "Second Year"]]
-     #_[:li [:a {:data-toggle "tab" :href "#proj4"} "proj4"]]
-     ]
+     #_[:li [:a {:data-toggle "tab" :href "#proj4"} "proj4"]]]
+
     [:div.tab-content
      [:div#fourth.tab-pane.fade.in.active
       [:h3 "SMS Application"]

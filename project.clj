@@ -3,16 +3,16 @@
   :url "http://portfolio-website.herokuapp.com"
   :license {:name "FIXME: choose"
             :url  "http://example.com/FIXME"}
-  :dependencies [[org.clojure/clojure "1.6.0"]
-                 [compojure "1.1.8"]
-                 [ring/ring-jetty-adapter "1.2.2"]
-                 [ring/ring-devel "1.2.2"]
+  :dependencies [[org.clojure/clojure "1.8.0"]
+                 [compojure "1.6.0"]
+                 [ring/ring-jetty-adapter "1.6.2"]
+                 [ring/ring-devel "1.6.2"]
                  [ring-basic-authentication "1.0.5"]
-                 [environ "0.5.0"]
-                 [com.cemerick/drawbridge "0.0.6"]
+                 [environ "1.1.0"]
+                 [com.cemerick/drawbridge "0.0.7"]
                  [hiccup "1.0.5" :exclusions [org.clojure/clojure]]
-                 [com.draines/postal "1.11.3"]
-                 [javax.mail/mail "1.4.4"
+                 [com.draines/postal "2.0.2"]
+                 [javax.mail/mail "1.4.7"
                   :exclusions [javax.activation/activation]]]
   :min-lein-version "2.0.0"
   :plugins [[environ/environ.lein "0.2.1"]]

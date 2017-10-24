@@ -25,17 +25,17 @@
     (basic/wrap-basic-authentication authenticated?)))
 
 (defn send-message [from phone subject message]
-  (do (println from phone subject message))
-  (postal/send-message
-    #_{:host "smtp-mail.outlook.com"
-     :user "masterdavidswift@hotmail.com"
-     :pass "Tuva4~FejaLere"
-     :port 587}
-    {:from    from
-     :to      "masterdavidswift@hotmail.com"
-     :subject subject
-     :body    message
-     :X-tra   phone}))
+  (do (println from phone subject message)
+      (postal/send-message
+        #_{:host "smtp-mail.outlook.com"
+           :user "masterdavidswift@hotmail.com"
+           :pass "Tuva4~FejaLere"
+           :port 587}
+        {:from    from
+         :to      "masterdavidswift@hotmail.com"
+         :subject subject
+         :body    message
+         :X-tra   phone})))
 
 (defroutes app
   (ANY "/repl" {:as req}
