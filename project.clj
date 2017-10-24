@@ -9,7 +9,7 @@
                  [ring/ring-devel "1.6.2"]
                  [ring-basic-authentication "1.0.5"]
                  [environ "1.1.0"]
-                 [com.cemerick/drawbridge "0.0.7"]
+                 [com.cemerick/drawbridge "0.0.6"]
                  [hiccup "1.0.5" :exclusions [org.clojure/clojure]]
                  [com.draines/postal "2.0.2"]
                  [javax.mail/mail "1.4.7"
