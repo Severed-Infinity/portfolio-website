@@ -57,7 +57,7 @@
                :content "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"}]
        (page/include-css
          "css.css"
-         "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+         "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
          "http://fonts.googleapis.com/css?family=Arizonia")
        #_(page/include-css "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")
        [:title title]
@@ -81,4 +81,4 @@
           [:a {:href "http://creativecommons.org/licenses/by/3.0/" :title "Creative Commons BY 3.0"} " CC BY 3.0"]]]]
        (page/include-js
          "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"
-         "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")])))
+         "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")])))
